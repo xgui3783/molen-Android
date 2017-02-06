@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- display category -->
+    <PreferenceCategory
+        android:title="@string/pref_category_display"
+        android:key="pref_category_display">
+
+        <CheckBoxPreference
+            android:key="flag_render_axis"
+            android:title="@string/flag_render_axis"
+            android:summary="@string/flag_render_axis_summary"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="flag_render_capture_area"
+            android:title="@string/flag_render_capture_area"
+            android:summary="@string/flag_render_capture_area_summary"
+            android:defaultValue="false" />
+        <CheckBoxPreference
+            android:key="flag_show_fps"
+            android:title="@string/flag_show_fps"
+            android:summary="@string/flag_show_fps_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <!-- detection category -->
+    <PreferenceCategory
+        android:title="@string/pref_category_detection"
+        android:key="@string/pref_category_detection">
+
+        <!-- size of detection box,size of capture box, canny1,canny2,polygon,tolerance -->
+        <au.com.pandamakes.www.pureblacktea.NumberSlider
+            android:key="int_detection_box_size"
+            android:title="@string/int_detection_box_size"
+            android:summary="@string/int_detection_box_size_summary"
+            android:defaultValue="100" />
+
+        <au.com.pandamakes.www.pureblacktea.NumberSlider
+            android:key="double_capture_box_size"
+            android:title="@string/float_capture_box_size"
+            android:summary="@string/float_capture_box_size_summary"
+            android:defaultValue="2.0" />
+
+        <au.com.pandamakes.www.pureblacktea.advance_detection_parameter
+            android:key="multiple_detection_parameters"
+            android:title="@string/multiple_detection_parameters"
+            android:summary="@string/multiple_detection_parameters_summary"
+            android:defaultValue="10,50,64,0.2"/>
+
+    </PreferenceCategory>
+
+    <!-- rendering category -->
+    <PreferenceCategory
+        android:title="@string/pref_category_rendering"
+        android:key="pref_category_rendering">
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_category_reset"
+        android:key="pref_category_reset">
+        <au.com.pandamakes.www.pureblacktea.confirmationPreference
+            android:title="Reset to Default Settings">
+
+        </au.com.pandamakes.www.pureblacktea.confirmationPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

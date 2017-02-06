@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:id="@+id/idViewCaptureRelativeLayout"
+    tools:context="au.com.pandamakes.www.pureblacktea.viewCapture">
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorDarkGrey"
+        android:id="@+id/TitleBar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\uF03E VIEW CAPTURE"
+            android:id="@+id/textViewTitleBar"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewCroppedImage"
+                android:adjustViewBounds="true"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/llViewCaptureControl">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="\uF030\ncapture"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:layout_margin="1dp"
+                    android:textSize="18pt"
+                    android:id="@+id/tvViewCaptureScanAgain"
+                    android:background="@color/colorVeryLightGrey"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18pt"
+                    android:layout_margin="1dp"
+                    android:id="@+id/tvViewCaptureFromGallery"
+                    android:text="\uF03E\ngallery"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:background="@color/colorVeryLightGrey"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btnViewCaptureClear"
+                    android:text="\uf0e2 Clear"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/btnAsyncStart"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:text="\uF093 OSR"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:id="@+id/ivOSRStatus"
+                    android:background="@drawable/server_status_yellow"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvOSRServerStatus"
+                    android:text="Requesting OSR Server status ..."/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="\uF021"
+                    android:id="@+id/tvOSRStatusRefresh"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:id="@+id/idMenuPlaceHolder">
+
+    </LinearLayout>
+    -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/colorGrey"
+        android:id="@+id/idLoadingScreen"
+        android:visibility="gone"
+        android:alpha="0.7">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

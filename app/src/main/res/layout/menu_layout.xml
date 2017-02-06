@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutMenu"
+    android:orientation="vertical"
+    >
+<!--
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMenu"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="\uF107"/>
+        -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutMenu">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnCamera"
+                android:rotation="270"
+                android:textColor="@color/colorDarkGrey"
+                style ="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="\uF03D"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnPicture"
+                android:rotation="270"
+                android:textColor="@color/colorDarkGrey"
+                style ="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="\uF03E"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnEdit"
+                android:rotation="270"
+                android:textColor="@color/colorDarkGrey"
+                style ="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="\uF115"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnGear"
+                android:rotation="270"
+                android:textColor="@color/colorDarkGrey"
+                style ="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="\uF013"/>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btnQuestion"
+                android:rotation="270"
+                android:textColor="@color/colorDarkGrey"
+                style ="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:text="\uF29C"/>
+        </LinearLayout>
+    </ScrollView>
+<!--
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutAdditionalBtns">
+
+            </GridView>
+        -->
+</LinearLayout>

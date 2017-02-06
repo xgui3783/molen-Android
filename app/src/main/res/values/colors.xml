@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name = "colorVeryLightGrey">#DDDDDD</color>
+    <color name = "colorLightGrey">#999999</color>
+    <color name = "colorGrey">#666666</color>
+    <color name = "colorDarkGrey">#333333</color>
+    <color name = "colorBlack">#000000</color>
+
+    <color name = "colorLightestYellow">#66FFFF99</color>
+    <color name = "colorLighterYellow">#FFFFFF66</color>
+    <color name = "colorLightYellow">#FFFFFF33</color>
+    <color name = "colorYellow">#FFFFFF00</color>
+    <color name = "colorDarkYellow">#FFEEEE00</color>
+
+    <color name = "colorLightestGreen">#6699FF99</color>
+    <color name = "colorLighterGreen">#FF44FF44</color>
+    <color name = "colorLightGreen">#FF22FF22</color>
+    <color name = "colorGreen">#FF00FF00</color>
+    <color name = "colorDarkGreen">#FF00EE00</color>
+
+    <color name = "colorLightestRed">#66FF9999</color>
+    <color name = "colorLighterRed">#FFFF4444</color>
+    <color name = "colorLightRed">#FFFF2222</color>
+    <color name = "colorRed">#FFFF0000</color>
+    <color name = "colorDarkRed">#FFEE0000</color>
+</resources>

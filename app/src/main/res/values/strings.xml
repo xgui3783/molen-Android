@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">molens</string>
+
+    <string name = "pref_category_display">Display Options</string>
+
+        <string name = "flag_render_axis">Render Axis</string>
+        <string name = "flag_render_axis_summary">Render XYZ axis when AR marker is found.</string>
+
+        <string name = "flag_render_capture_area">Render Capture Area</string>
+        <string name = "flag_render_capture_area_summary">Render the area that will be captured to be sent for Optical Structure Recognition.</string>
+
+        <string name = "flag_show_fps">Show FPS</string>
+        <string name = "flag_show_fps_summary">Show FPS at the top-left corner of the screen.</string>
+
+    <string name = "pref_category_detection">Detection Parameters</string>
+
+        <string name = "int_detection_box_size">Size of the Detection Box</string>
+        <string name = "int_detection_box_size_summary">Set the length of the detection box.</string>
+
+        <string name = "float_capture_box_size">Size of the Capture Box</string>
+        <string name = "float_capture_box_size_summary">Set the size of the capture box as a multiple of the size of the AR marker.</string>
+
+        <string name = "multiple_detection_parameters">Core Parameters</string>
+        <string name = "multiple_detection_parameters_summary">(Advanced) Set the parameters for Canny threshold, polygon approximation and template matching tolerance.</string>
+
+    <string name = "pref_category_rendering">Rendering Parameters</string>
+
+    <string name = "pref_category_reset">Reset All Settings</string>
+
+    <string name = "ARMarkerHeader">
+        <b>AR Marker</b>\n\n
+        Point the camera at a coloured printout or an on-screen display of this AR marker.
+    </string>
+
+    <string name = "helpdoc1">
+        molens is made with
+    </string>
+    <string name = "helpdoc1_5">
+
+        For support/bugs, please send e-mail to:
+    </string>
+    <string name = "helpdoc2">
+        <b>Some known bugs/quirks of Optical Structure Recognition:</b>\n\n
+        • it only works (sometimes) on condensed structural formulae (sorry),\n
+        • it sometimes mishandles isomers (1-propanol intepreted as isopropanol),\n
+        • it does not work exceptionally-well/at-all on large molecules.\n
+        • what we are trying to say is, if you can load the molecule via .mol file, do so.\n\n
+
+        <b>Why do some .mol files display molecules in 3D, but some do not?</b>\n\n
+        • because calculating the 3D coordinates of a given molecule is real hardwork, and\n
+        • most of the time, .mol files are only required to display a 2D chemical structure any way (chemdraw, etc)\n\n
+
+        <b>To determine if a .mol file is 2D or 3D, simply render it.</b>\n\n
+
+        <b>Why is the main app in a landscape configuration?</b>\n\n
+        • molen carry out image manipulation using openCV. The Android implementation of openCV defaults to a landscape output. We are looking at writing a custom interface in the future to fix this.\n\n
+
+        <b>What about custom AR markers?</b>\n\n
+        • As far as we can tell, fitting a custom AR marker is extremely finicky. There are no immediate plans to implement custom AR markers.
+    </string>
+</resources>
